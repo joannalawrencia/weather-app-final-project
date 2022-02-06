@@ -8,23 +8,16 @@ h3 {
 h1 {
   font-size: 30px;
   margin-top: 25px;
+  font-weight: 100;
 }
 h2 {
   font-size: 40px;
-  text-decoration: underline;
 }
 h3 {
   margin-top: 15px;
   font-weight: lighter;
 }
 
-h4 {
-  display: block;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  text-align: left;
-  font-size: 50px;
-}
 ul {
   margin: 0;
   padding: 0;
@@ -43,6 +36,12 @@ li:first-letter {
   text-transform: capitalize;
 }
 
+p {
+  background-color: white;
+  padding: 5px 10px;
+  margin: 25px auto;
+  border-radius: 10px;
+}
 .app-wrap {
   max-width: 600px;
   margin: 30px auto;
