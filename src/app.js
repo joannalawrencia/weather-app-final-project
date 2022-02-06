@@ -18,7 +18,7 @@ function formatDate(timestamp) {
     "Saturday",
   ];
   let day = days[date.getDay()];
-  return `${day}, ${hours}:${minutes}`;
+  return `Last updated: ${day}, ${hours}:${minutes}`;
 }
 
 function formatDay(timestamp) {
@@ -45,7 +45,8 @@ function displayForecast(response) {
                 <div class="weather-forecast-date">${formatDay(
                   forecastDay.dt
                 )}</div>
-                ${index}
+                </br>
+                <div> ${index}° C </div>
                 <img
                   src="http://openweathermap.org/img/wn/${
                     forecastDay.weather[0].icon
@@ -56,10 +57,10 @@ function displayForecast(response) {
                 <div class="weather-forecast-temperature">
                   <span class="weather-forecast-temperature-max">${Math.round(
                     forecastDay.temp.max
-                  )}</span>
+                  )}</span> | 
                   <span class="weather-forecast-temperature-min">${Math.round(
                     forecastDay.temp.min
-                  )}</span>
+                  )}</span> ° C
                 </div>
               </div>
              `;
